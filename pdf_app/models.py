@@ -9,6 +9,7 @@ class Customer(models.Model):
     phone = models.CharField(max_length=10)
     age = models.IntegerField()
     profile_pic = models.ImageField()
+    description = models.TextField()
 
     def __str__(self):
         return self.name
