@@ -1,20 +1,25 @@
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Customer List</title>
-    </head>
-    <body>
-        {{customer}}
+
+<head>
+    <meta charset="utf-8">
+    <title>Customer List</title>
+</head>
+
+<body>
+    <center>
+        <font size="7" face = "Times New Roman" color = "red"><b>{{customer}}'s Profile</b></font>
+    </center><br><br>
+    <font size="5" face = "Bedrock"><b>Name:</b> {{customer}}</font><br><br>
+    <font size="5" face = "Bedrock"><b>Email:</b> {{customer.email}}</font><br><br>
+    <font size="5" face = "Bedrock"><b>Address:</b> {{customer.address}}</font><br><br>
+    <font size="5" face = "Bedrock"><b>Phone:</b> {{customer.phone}}</font><br><br>
+    <font size="5" face = "Bedrock"><b>Age:</b> {{customer.age}}</font><br><br>
+    <font size="5" face = "Bedrock"><b>Description:</b> {{customer.description}}</font><br><br><br>
+    <center>
+        <img src=media/{{customer.profile_pic}} height="500px">
         <br>
-        {{customer.email}}
-        <br>
-        {{customer.address}}
-        <br>
-        {{customer.phone}}
-        <br>
-        {{customer.age}}
-        <br>
-        {{customer.profile_pic}}
-        <img src=media/{{customer.profile_pic}} height="200px" >
-    </body>
+        <font size="4" face = "Bedrock">{{customer.profile_pic}}</font>
+    </center>
+</body>
+
 </html>
