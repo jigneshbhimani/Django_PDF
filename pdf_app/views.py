@@ -24,10 +24,10 @@ def customer_render_pdf_view(request, *args, **kwargs):
     response = HttpResponse(content_type='application/pdf')
 
     # If you want to download pdf file
-    response['Content-Disposition'] = 'attachment; filename="customer_list.pdf"'
+    # response['Content-Disposition'] = 'attachment; filename="customer_list.pdf"'
 
     # If you want to open pdf file in browser
-    # response['Content-Disposition'] = 'filename="customer_list.pdf"'
+    response['Content-Disposition'] = 'filename="customer_list.pdf"'
 
     # find the template and render it.
     template = get_template(template_path)
